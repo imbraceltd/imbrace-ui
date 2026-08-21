@@ -1,0 +1,67 @@
+import { Meta, Source } from '@storybook/addon-docs';
+import { Illustration } from '.';
+import { IllustrationMapping } from './constant'
+
+<Meta title="Illustrations" />
+
+# Illustrations
+<div style={{
+  display:'grid',
+  gap: 15,
+  gridTemplateColumns: '1fr 1fr',
+  marginBottom: 10
+}}>
+{Object.keys(IllustrationMapping).map(illustration => (
+  <div key={illustration} style={{
+    display:'flex',
+    gap: 5,
+    flexDirection: 'column',
+  }}>
+    <span>{illustration}</span>
+    <div style={{
+      borderRadius: '4px',
+      background: '#FFFFFF',
+      boxShadow: 'rgb(0 0 0 / 10%) 0 1px 3px 0',
+      border: '1px solid rgba(0,0,0,.1)',
+      overflow: 'hidden',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flex: 'none',
+      aspectRatio: '1/1'
+    }}>
+      <Illustration name={illustration} />
+    </div>
+  </div>
+))}
+</div>
+
+## Example
+### Basic usage
+<div style={{height: '500px'}}>
+  <Illustration name="addFile" />
+</div>
+
+<Source code={`
+  <Illustration name="addFile" />
+`}/>
+
+### With description
+<div style={{height: '500px'}}>
+  <Illustration name="addFile" description={
+      <>
+        {
+          `You currently don’t have any Touchpoint set up.\n`
+        }
+          Create <a href="#">a new Campaign</a> or <a href="#">a new Touchpoint</a> to start.
+      </>
+    } />
+</div>
+<Source code={`
+  <Illustration name="addFile" description={
+    <>
+      You currently don’t have any Touchpoint set up.\n
+      Create <a href="#">a new Campaign</a> or <a href="#">a new Touchpoint</a> to start.
+    </>
+  } />
+`}/>

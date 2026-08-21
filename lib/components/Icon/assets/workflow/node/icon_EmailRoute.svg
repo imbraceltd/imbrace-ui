@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <clipPath id="ncxvflnl3a">
+            <path style="stroke-width:2px;stroke:#bdbdbd;fill:none" d="M0 0h36v29.082H0z"/>
+        </clipPath>
+    </defs>
+    <path style="fill:none" d="M0 0h50v50H0z"/>
+    <g style="clip-path:url(#ncxvflnl3a)" transform="translate(8 11.268)">
+        <path d="M24.424 25.97H6.989A2.489 2.489 0 0 1 4.5 23.48V6.989A2.489 2.489 0 0 1 6.989 4.5h24.926A2.489 2.489 0 0 1 34.4 6.989v4.33" transform="translate(-3.622 -3.622)" style="stroke-miterlimit:10;stroke-linecap:round;stroke-width:2px;stroke:#bdbdbd;fill:none"/>
+        <path d="m22.085 23.5 10.468 6.845a2.449 2.449 0 0 0 2.754-.039l9.818-6.806" transform="translate(-17.774 -18.913)" style="stroke-linejoin:round;stroke-linecap:round;stroke-width:2px;stroke:#bdbdbd;fill:none"/>
+        <path d="M121.613 63H109.1a.729.729 0 0 0-.48 1.278l5.34 4.673a.729.729 0 0 1 .249.549v8.677a.729.729 0 0 0 1.2.56l.932-.777a.73.73 0 0 0 .263-.56v-7.988a.73.73 0 0 1 .249-.549l5.24-4.586a.729.729 0 0 0-.48-1.277z" transform="translate(-87.222 -50.703)" style="stroke:#156df2;stroke-linejoin:round;stroke-linecap:round;stroke-width:2px;fill:none"/>
+    </g>
+</svg>

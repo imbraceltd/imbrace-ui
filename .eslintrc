@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "env": { "browser": true, "es2020": true },
+    "extends": ["airbnb-typescript", "airbnb/hooks", "plugin:@typescript-eslint/recommended", "plugin:react-hooks/recommended", "prettier"],
+    "ignorePatterns": ["dist", ".eslintrc", "*.stories.tsx", "vite*"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["react-refresh", "@typescript-eslint", "simple-import-sort"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "react-refresh/only-export-components": "off",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "react/jsx-filename-extension": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off",
+        "@typescript-eslint/consistent-type-imports": 1,
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-explicit-any": "off"
+    }
+}

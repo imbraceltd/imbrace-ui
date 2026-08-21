@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    gap: 4px;
+    &.fullWidth {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+.dateRangePicker {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    &.fullWidth {
+        width: 100%;
+    }
+    .dash {
+        margin-top: 47px;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--color-secondary-3);
+        height: 40px;
+        display: flex;
+        align-items: center;
+        &.noDescription {
+            margin-top: 27px;
+        }
+        &.noLabel {
+            margin-top: 0;
+        }
+    }
+}
+
+.popperContainer {
+    background: white;
+    box-shadow:
+        0px 4px 8px rgba(189, 189, 189, 0.08),
+        0px 2px 24px rgba(224, 224, 224, 0.2);
+
+    width: max-content;
+
+    max-width: 217px;
+    border-radius: 4px;
+    overflow: hidden;
+    .inner {
+        max-height: 288px;
+
+        .slotsContainer {
+            width: max-content;
+            max-width: 217px;
+            max-height: 256px;
+            :global {
+                .simplebar-wrapper {
+                    padding: 16px;
+                }
+            }
+        }
+    }
+    .action {
+        border-top: 1px solid var(--color-light-4);
+        padding: 4px 8px;
+        width: auto;
+    }
+}
+
+.li {
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.radio {
+    width: 17px;
+    height: 17px;
+    padding: 3px;
+    border-radius: 100%;
+    border: 1px solid var(--color-light-3);
+    &.checked {
+        &::after {
+            content: '';
+            display: block;
+            width: 9px;
+            height: 9px;
+            border-radius: 100%;
+            background: var(--color-primary-1);
+        }
+    }
+    &.checked {
+        &::after {
+            content: '';
+            display: block;
+            width: 9px;
+            height: 9px;
+            border-radius: 100%;
+            background: var(--color-primary-1);
+        }
+    }
+    &.disabled {
+        &.checked {
+            &::after {
+                background: var(--color-light-4);
+            }
+        }
+    }
+}

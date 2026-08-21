@@ -1,0 +1,50 @@
+.checkboxContainer {
+    .checkbox {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1px solid var(--color-light-3);
+        background: white;
+
+        &.checked {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-primary-1);
+            border-color: var(--color-primary-1);
+            color: white;
+        }
+        &.indeterminate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                background: var(--color-primary-1);
+            }
+        }
+    }
+    &:hover {
+        .checkbox {
+            border-color: var(--color-primary-1);
+        }
+    }
+    &.disabled {
+        .checkbox {
+            background: var(--color-light-2);
+            &.checked {
+                background: var(--color-light-2);
+                border-color: var(--color-light-3);
+            }
+            &.indeterminate {
+                &::before {
+                    background: var(--color-light-2);
+                }
+            }
+        }
+    }
+}

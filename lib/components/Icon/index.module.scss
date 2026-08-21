@@ -1,0 +1,204 @@
+.disabled {
+    &.email {
+        :global {
+            .email__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.facebook {
+        :global {
+            .facebook__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.instagram {
+        :global {
+            .instagram__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+            .instagram__colorPath2 {
+                fill: none;
+            }
+        }
+    }
+    &.line {
+        :global {
+            .line_colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.messenger {
+        :global {
+            .messenger__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+        }
+    }
+    &.store {
+        :global {
+            .store__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.web {
+        :global {
+            .webWidget__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+        }
+    }
+    &.wechat {
+        :global {
+            .wechat__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+        }
+    }
+    &.whatsapp {
+        :global {
+            .whatsapp__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+        }
+    }
+    &.openai {
+        :global {
+            .openAi__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.meta {
+        :global {
+            .meta__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+        }
+    }
+    &.crm {
+        :global {
+            .crm__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.sms {
+        :global {
+            .sms__disabledLinear {
+                > stop {
+                    stop-color: var(--channel-inactive-color);
+                }
+            }
+        }
+    }
+    &.website {
+        :global {
+            .website__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.tiktok {
+        :global {
+            .tiktok__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.twitter {
+        :global {
+            .twitter__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.imbraceai {
+        :global {
+            .imbraceAi__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.telegram {
+        :global {
+            .telegram__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.google {
+        :global {
+            .google__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.microsoft {
+        :global {
+            .microsoft__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.formManagement {
+        :global {
+            .formManagement__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.outlook {
+        :global {
+            .outlook__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+            .outlook__colorPath1 {
+                fill: white;
+            }
+        }
+    }
+    &.salesforce {
+        :global {
+            .salesforce__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.shopify {
+        :global {
+            .shopify__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.call {
+        :global {
+            .call__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+    &.zoom {
+        :global {
+            .zoom__colorPath {
+                fill: var(--channel-inactive-color);
+            }
+        }
+    }
+}

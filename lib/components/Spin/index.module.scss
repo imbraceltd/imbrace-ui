@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .inner {
+        height: 100%;
+        &.blur {
+            opacity: 0.5;
+
+            &:after {
+                position: absolute;
+                inset: 0;
+                z-index: 10;
+                opacity: 0.4;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                transition: all 0.3s;
+                content: '';
+                pointer-events: auto;
+            }
+        }
+    }
+    .loadingContainer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > span {
+            z-index: 1;
+        }
+    }
+}

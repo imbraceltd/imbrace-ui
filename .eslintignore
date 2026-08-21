@@ -1,0 +1,9 @@
+/public
+/build
+/node_modules
+/devops
+/dist
+*.js
+*.svg
+*.stories.tsx
+*.json

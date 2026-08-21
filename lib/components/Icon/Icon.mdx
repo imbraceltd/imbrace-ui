@@ -1,0 +1,115 @@
+import { Meta, IconGallery, IconItem, Source } from '@storybook/addon-docs';
+import { Icon } from '.';
+import { generalIconMapping, channelIconMapping, workflowIconMapping, twoToneIconMapping , fileIconMapping, integrationIconMapping } from './constant';
+
+<Meta title="Icons"  />
+
+# Icons
+
+## general
+<IconGallery>
+  {Object.keys(generalIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} />
+    </IconItem>
+  ))}
+</IconGallery>
+
+## channel
+**Color is not customizable**
+<IconGallery>
+  {Object.keys(channelIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} namespace="channel" />
+    </IconItem>
+  ))}
+</IconGallery>
+**Inactive mode**
+<IconGallery>
+  {Object.keys(channelIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} inactive namespace="channel" />
+    </IconItem>
+  ))}
+</IconGallery>
+
+## workflow
+**Color is not customizable**
+<IconGallery>
+  {Object.keys(workflowIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} namespace="workflow" />
+    </IconItem>
+  ))}
+</IconGallery>
+
+## twoTone
+<IconGallery>
+  {Object.keys(twoToneIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} namespace="twoTone" primaryColor="var(--color-primary-1)" secondaryColor="var(--color-light-5)" />
+    </IconItem>
+  ))}
+</IconGallery>
+
+## integration
+<IconGallery>
+  {Object.keys(integrationIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} namespace="integration" />
+    </IconItem>
+  ))}
+</IconGallery>
+
+## file
+**Color is not customizable**
+<IconGallery>
+  {Object.keys(fileIconMapping).sort().map(icon => (
+    <IconItem key={icon} name={icon}>
+        <Icon name={icon} namespace="file" />
+    </IconItem>
+  ))}
+</IconGallery>
+
+
+## Example
+### Basic usage
+<Icon name="accountCircle" />
+<Source code={`
+  <Icon name="accountCircle" />
+`} />
+
+### Customize icon size
+<Icon name="accountCircle" style={{ fontSize: 24 }} />
+<Source code={`
+  <Icon name="accountCircle" style={{ fontSize: 24 }} />
+`} />
+### Customize icon color
+<Icon name="accountCircle" style={{ fontSize: 24, color: 'var(--color-primary-1)' }} />
+<Source code={`
+  <Icon name="accountCircle" style={{ fontSize: 24, color: 'var(--color-primary-1)' }} />
+`} />
+### Icon Name Space
+<Icon name="subWorkflow" style={{ fontSize: 24 }} namespace="workflow" />
+<Icon name="line" style={{ fontSize: 24 }} namespace="channel" />
+<Source code={`
+<Icon name="subWorkflow" style={{ fontSize: 24 }} namespace="workflow" />
+<Icon name="line" style={{ fontSize: 24 }} namespace="channel" />
+`} />
+
+### Inactive
+**only for channel namespace**
+<Icon name="facebook" style={{ fontSize: 24 }} namespace="channel" />
+<Icon name="facebook" style={{ fontSize: 24 }} inactive namespace="channel" />
+<Source code={`
+<Icon name="facebook" style={{ fontSize: 24 }} namespace="channel" />
+<Icon name="facebook" style={{ fontSize: 24 }} inactive namespace="channel" />
+`} />
+
+### Twon Tone
+<Icon name="sort" namespace="twoTone" style={{ fontSize: 24 }} primaryColor="var(--color-primary-1)" secondaryColor="var(--color-light-5)" />
+<Source code={`
+<Icon name="sort" namespace="twoTone" style={{ fontSize: 24 }} primaryColor="var(--color-primary-1)" secondaryColor="var(--color-light-5)" />
+`} />
+
+

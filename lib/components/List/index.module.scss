@@ -1,0 +1,32 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-secondary-4);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    :global {
+        .simplebar-content {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .container {
+        padding: 0px 16px;
+        width: 100%;
+        min-height: 0;
+    }
+    .listItem {
+        width: 100%;
+        display: flex;
+        padding: 12px 0px;
+        span {
+            color: var(--color-light-7);
+        }
+        & + div {
+            border-top: 1px solid var(--color-secondary-4);
+        }
+    }
+}

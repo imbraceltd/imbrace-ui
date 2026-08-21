@@ -1,0 +1,110 @@
+@mixin animation {
+    transition: all 0.3s ease;
+}
+@mixin common {
+    padding: 0;
+    margin: 0;
+}
+@mixin link {
+    a,
+    button {
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0;
+        color: var(--color-primary-1);
+        cursor: pointer;
+        text-decoration: underline;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            opacity: 0.3;
+            text-decoration: underline;
+        }
+        &:focus {
+            color: var(--color-primary-1);
+        }
+        &:active {
+            color: var(--color-primary-1);
+        }
+        &:visited {
+            color: var(--color-primary-1);
+        }
+    }
+}
+.heading1 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    @include animation;
+    @include common;
+    @media screen and (max-width: 576px) {
+        font-size: 24px;
+    }
+}
+.heading2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    @include animation;
+    @include common;
+}
+.subheading1 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    @include animation;
+    @include common;
+}
+.subheading2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    @include animation;
+    @include common;
+    @include link;
+    &.tight {
+        line-height: 20px;
+    }
+    &.light {
+        line-height: 22px;
+        font-weight: 400;
+    }
+}
+.body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    @include animation;
+    @include common;
+    @include link;
+    &.tight {
+        line-height: 16px;
+    }
+    &.bold {
+        font-weight: 800;
+    }
+}
+.caption {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    @include animation;
+    @include common;
+    @include link;
+    &.bold {
+        font-weight: 800;
+    }
+}
+.inherit {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    @include animation;
+    @include common;
+}

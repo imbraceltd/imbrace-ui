@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <clipPath id="9tigxhamla">
+            <path style="fill:none" d="M0 0h26.182v36H0z"/>
+        </clipPath>
+    </defs>
+    <path style="fill:none" d="M0 0h50v50H0z"/>
+    <g>
+        <g style="clip-path:url(#9tigxhamla)" transform="translate(12 7)">
+            <path d="M9 86.094H0v6.546a2.454 2.454 0 0 0 2.455 2.455H9z" transform="translate(0 -59.095)" style="fill:#00832d"/>
+            <path d="M9 0H2.455A2.454 2.454 0 0 0 0 2.455V27h9V9h8.181V0z" style="fill:#ffba00"/>
+            <path d="M63.788 86.094h-9v9h6.546a2.454 2.454 0 0 0 2.455-2.455z" transform="translate(-37.606 -59.095)" style="fill:#0066da"/>
+            <path transform="translate(9 26.999)" style="fill:#00ac47" d="M0 0h8.181v9.001H0z"/>
+            <path transform="translate(17.181 9)" style="fill:#2684fc" d="M0 0h9.001v17.999H0z"/>
+            <path d="M54.787 0v9h9z" transform="translate(-37.606)" style="fill:#ea4335"/>
+        </g>
+    </g>
+</svg>

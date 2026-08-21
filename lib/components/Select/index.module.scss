@@ -1,0 +1,111 @@
+.chipsContainer {
+    width: 100%;
+    height: 100%;
+    max-height: 56px;
+}
+
+.listItem {
+    position: relative;
+    .iconContainer {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.contentContainer {
+    position: relative;
+    .blur {
+        opacity: 0.5;
+
+        &:after {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+            opacity: 0.4;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            transition: all 0.3s;
+            content: '';
+            pointer-events: auto;
+        }
+    }
+    .simpleBarContainer {
+        height: 100%;
+        width: 100%;
+        max-height: 280px;
+    }
+
+    .loadingContainer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > span {
+            z-index: 1;
+        }
+    }
+}
+
+.selectContainer {
+    cursor: pointer;
+    padding: 9px 12px;
+    color: var(--color-light-7);
+    border: 1px solid var(--color-secondary-4);
+    border-radius: 4px;
+    min-width: 240px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    &.chip {
+        height: auto;
+        min-height: 40px;
+        max-height: fit-content;
+        padding: 6px 12px;
+    }
+    &.fullWidth {
+        width: 100%;
+        min-width: 0px;
+    }
+    &:hover {
+        border-color: var(--color-primary-1);
+    }
+    &.disabled {
+        pointer-events: none;
+        background: var(--color-light-2);
+        color: var(--color-light-4);
+    }
+    &.error {
+        border-color: var(--color-danger-1);
+    }
+    &.readOnly {
+        cursor: initial;
+    }
+}
+
+.menu {
+    position: relative;
+    .extra {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+    &:hover {
+        .extra {
+            display: block;
+        }
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}

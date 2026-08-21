@@ -1,0 +1,129 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    color: var(--color-light-7);
+}
+body.sb-show-main {
+    overflow: auto;
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+:root {
+    --color-primary-1: #156df2;
+    --color-primary-2: #e8f2fc;
+    --color-primary-3: #d9effe;
+    --color-primary-4: #135dd5;
+    --color-primary-5: #acddfd;
+    --color-primary-6: #3399fc;
+    --color-primary-7: #f4faff;
+    --color-primary-8: #eef7ff;
+    --color-primary-9: #1d89f2;
+    --color-secondary-1: #bdbdbd;
+    --color-secondary-2: #f7f7f7;
+    --color-secondary-3: #828282;
+    --color-secondary-4: #e0e0e0;
+    --color-danger-1: #e53c3c;
+    --color-danger-2: #c93535;
+    --color-danger-3: #fbdede;
+    --color-danger-4: #fae9e9;
+    --color-danger-5: #ff4343;
+    --color-accent-yellow-1: #c87504;
+    --color-accent-yellow-2: #fa9917;
+    --color-accent-yellow-3: #fbb351;
+    --color-accent-yellow-4: #fdcc8b;
+    --color-accent-yellow-5: #fee5c5;
+    --color-accent-yellow-6: #fff2e2;
+    --color-accent-yellow-7: #fef5e8;
+    --color-green-1: #14ac4e;
+    --color-green-2: #8aaa23;
+    --color-green-3: #e9fbf0;
+    --color-green-4: #c0f7d5;
+    --color-green-5: #139043;
+    --color-green-6: #41e680;
+    --color-purple-1: #895ccb;
+    --color-light-1: #ffffff;
+    --color-light-2: #f2f2f2;
+    --color-light-3: #e0e0e0;
+    --color-light-4: #bdbdbd;
+    --color-light-5: #828282;
+    --color-light-6: #4f4f4f;
+    --color-light-7: #333333;
+    --color-light-8: #000000;
+}
+
+/**
+ *  whats app icon svg style
+ */
+.wts-svg-icon-1 {
+    fill: url(#wts-linear-gradient);
+}
+
+.wts-svg-icon-2 {
+    fill: #fff;
+    fill-rule: evenodd;
+}
+
+/**
+ *  web icon svg style
+ */
+.web-svg-icon-1 {
+    fill: url(#web-svg-linear-gradient);
+}
+.web-svg-icon-2,
+.web-svg-icon-3 {
+    fill: #fff;
+}
+.web-svg-icon-3 {
+    fill-rule: evenodd;
+}
+.web-svg-icon-4 {
+    fill: #156df2;
+}
+
+/**
+ *  facebook icon svg style
+ */
+.fb-svg-icon-1 {
+    fill: #1677f0;
+}
+.fb-svg-icon-2 {
+    fill: #fff;
+}
+
+/**
+ *  instagram icon svg style
+ */
+.ig-svg-icon-1 {
+    fill: none;
+}
+.ig-svg-icon-2 {
+    clip-path: url(#ig-clip-path);
+}
+.ig-svg-icon-3 {
+    clip-path: url(#ig-clip-path-2);
+}
+.ig-svg-icon-4 {
+    fill: #fff;
+}
+
+.simplebar-content-wrapper,
+.simplebar-content {
+    outline: none;
+}
+
+.imagePreview {
+    &.ant-image-preview-operations-wrapper {
+        z-index: 1330;
+    }
+
+    .ant-image-preview-wrap {
+        z-index: 1320;
+    }
+    .ant-image-preview-mask {
+        z-index: 1300;
+    }
+}
